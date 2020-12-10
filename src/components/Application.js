@@ -6,24 +6,6 @@ import Appointment from "./Appointment";
 
 import "components/Application.scss";
 
-const days = [
-  {
-    id: 1,
-    name: "Monday",
-    spots: 2,
-  },
-  {
-    id: 2,
-    name: "Tuesday",
-    spots: 5,
-  },
-  {
-    id: 3,
-    name: "Wednesday",
-    spots: 0,
-  },
-];
-
 const appointments = [
   {
     id: 1,
@@ -74,6 +56,13 @@ const appointments = [
 export default function Application(props) {
 
   const [day, setDay] = useState("Monday");
+  const [days, setDays] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/days').then((response) => {
+      setDays(response.data);
+    });
+  }, [])
 
   return (
     <main className="layout">
