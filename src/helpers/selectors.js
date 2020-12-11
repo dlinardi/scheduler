@@ -1,4 +1,4 @@
-export default function getAppointmentsForDay(state, day) {
+function getAppointmentsForDay(state, day) {
   let appointments = []
   const results = [];
   
@@ -17,4 +17,19 @@ export default function getAppointmentsForDay(state, day) {
   });
 
   return results;
-}
+};
+
+function getInterview(state, interview) {
+  if (interview) { 
+    const result = {};
+
+    const id = interview.interviewer;
+    result.student = interview.student;
+    result.interviewer = state.interviewers[id];
+    return result;
+  }
+
+  return null;
+};
+
+export { getAppointmentsForDay, getInterview };
