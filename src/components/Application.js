@@ -17,6 +17,7 @@ export default function Application(props) {
   
   const interviewers = getInterviewersForDay(state, state.day);
   
+  // for each day, get all the appointments and then render each appointment
   const appointments = getAppointmentsForDay(state, state.day).map(
     appointment => {
       return (
@@ -56,4 +57,4 @@ export default function Application(props) {
       </section>
     </main>
   );
-}
+};
