@@ -6,7 +6,7 @@ The **Interview Scheduler** is a single-page web application built using *[React
 
 The app allows the user to book an appointment with a select list of interviewers throughout any day of the week.
 
-Data is persisted by the API server which is using a *PostgreSQL* database. The client application communicates with an API server over HTTP, using JSON.
+Data is persisted by the API server which is using a *[PostgreSQL](https://www.postgresql.org)* database. The client application communicates with an API server over HTTP, using JSON.
 
 During development, testing was done using *[Storybook](https://storybook.js.org)*, *[Jest](https://jestjs.io)* and *[Cypress](https://www.cypress.io)*.
 
@@ -23,7 +23,8 @@ During development, testing was done using *[Storybook](https://storybook.js.org
 - Cypress
 
 ---
-## Screenshots
+## Preview
+!["Preview"](https://raw.githubusercontent.com/dlinardi/scheduler/master/docs/scheduler-preview.gif)
 
 ---
 ## Setup
@@ -46,6 +47,14 @@ Install all dependencies with `npm install`.
 npm start
 ```
 
+## Running API Server
+
+- while in 
+
+```sh
+npm run start
+```
+
 ## Running Jest Test Framework
 
 ```sh
@@ -57,7 +66,6 @@ npm test
 ```sh
 npm run storybook
 ```
-  - http://localhost:9009/
 
 ## Running Cypress Visual Testbed
 
