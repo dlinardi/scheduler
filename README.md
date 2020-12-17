@@ -24,7 +24,7 @@ During development, testing was done using *[Storybook](https://storybook.js.org
 
 ---
 ## Preview
-!["Preview"](https://raw.githubusercontent.com/dlinardi/scheduler/master/docs/scheduler-preview.gif)
+!["Preview"](https://github.com/dlinardi/scheduler/blob/master/docs/scheduler-preview.gif)
 
 ---
 ## Setup
